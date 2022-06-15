@@ -6,4 +6,7 @@ document.addEventListener('mousemove', function (e) {
   heart.style.left = x + 'px';
   heart.style.top = y + 'px';
   body.appendChild(heart);
+  setTimeout(function () {
+    heart.remove();
+  }, 1000);
 });
