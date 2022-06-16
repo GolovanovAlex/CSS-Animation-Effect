@@ -8,3 +8,25 @@ body {
   background-color: #111;
   overflow: hidden;
 }
+span {
+  position: absolute;
+  pointer-events: none;
+}
+span::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+  background-size: cover;
+  animation: movemouse 1s linear infinite;
+}
+@keyframes {
+  0% {
+  }
+
+  100%{
+    
+  }
+}
